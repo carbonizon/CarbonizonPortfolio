@@ -1,4 +1,22 @@
 /*General*/
+.ease1 {
+-webkit-transition: all .5s ease-in-out;
+-moz-transition: all .5s ease-in-out; 
+-o-transition: all .5s ease-in-out; 
+-ms-transition: all .5s ease-in-out; 
+}
+.center {
+    text-align: center;
+}
+.whitetext {
+    color: white;
+}
+.success {
+    color: #A084C7;
+}
+.error {
+    background-color: red;
+}
 ::-webkit-scrollbar { 
     display: none; 
 }
@@ -117,11 +135,19 @@ h7 {
 .slider_icon {
     font-size: 200px;
 }
+.slider_icon-smaller {
+    font-size: 200px;
+}
 .slide_lead_before {
     font-weight: normal;
 }
 .slide_lead_after {
     font-weight: bolder;
+}
+@media (max-width: 1000px) {
+    .slider_icon-smaller {
+    font-size: 150px;
+}
 }
 @media (max-width: 768px) {
     .slider_icon {
@@ -130,6 +156,9 @@ h7 {
     .slider_end {
     font-size: 20px;
     }
+    .slider_icon-smaller {
+        font-size: 90px
+    }
 }
 @media (max-width: 400px) {
     .slider_icon {
@@ -137,6 +166,9 @@ h7 {
     }
     .slider_end {
     font-size: 16px;
+    }
+    .slider_icon-smaller {
+        font-size: 60px
     }
     .icon-screen {
     margin-right: 10px;
@@ -161,7 +193,7 @@ h7 {
 }
 /*Third Section*/
 .third_section {
-    background-color: #FEAC58;
+    background-color: #A084C7;
     padding-bottom: 100px;
 }
 .bookmark_2 {
@@ -170,4 +202,40 @@ h7 {
     margin-left: 30px;
     float:right;
     
+}
+/*Fourth Section*/
+.fourth_section {
+    background: #1f1f1f url(../images/top_bg.png) repeat;
+    padding-bottom:100px;
+}
+.bookmark_3 {
+    font-size: 60px;
+    color: #A084C7;
+    margin-left: 30px;
+    
+}
+a#rotator2 span {
+display:inline-block;
+-webkit-transition: all .5s ease-in-out;
+-moz-transition: all .5s ease-in-out; 
+-o-transition: all .5s ease-in-out; 
+-ms-transition: all .5s ease-in-out; 
+}
+
+a#rotator2 span:hover { 
+-webkit-transform: rotate(360deg); 
+-moz-transform: rotate(360deg); 
+-o-transform: rotate(360deg);
+-ms-transform: rotate(360deg); 
+}
+.fb:hover {
+    color: #425F9C;
+}
+.skype:hover {
+    color: #00AFF0;
+}
+.contact-icons {
+    font-size: 90px;
+    color: rgba(255,255,255,0.6);
+    margin: 10px;
 }
