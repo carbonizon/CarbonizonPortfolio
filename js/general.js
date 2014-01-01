@@ -32,7 +32,7 @@ $('.bxslider').bxSlider();
     
 })
 //CONTACT FORM - CUSTOM VALIDATION - MANDRILL
-function formsubmit() {
+function formSubmit() {
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var message = document.getElementById("message").value;
