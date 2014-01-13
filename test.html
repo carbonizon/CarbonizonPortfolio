@@ -1,0 +1,1229 @@
+<style>
+    /*
+
+Theme Name: Student Loan Service
+
+*/
+
+@charset "utf-8";
+
+/* CSS Document */
+
+
+
+/* html5 elements */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {display:block;}
+
+
+
+/* Reset */
+
+body,dl,dt,dd,h1,h2,h3,h4,h5,h6,
+
+pre,code,form,fieldset,legend,
+
+input,textarea,p,blockquote,
+
+th,td       {margin:0; padding:0;}
+
+table       {border:0; border-collapse:collapse; border-spacing:0; empty-cells:show; font-size:100%;}
+
+fieldset,
+
+img         {border:0;}
+
+caption,
+
+th          {vertical-align:top; text-align:left; font-weight:normal;}
+
+h1,h2,h3,
+
+h4,h5,h6    {font-size:100%; font-weight:normal; line-height:normal; font-family:'proxima_nova_light',Arial, Helvetica, sans-serif;}
+
+sup         {vertical-align:text-top;}
+
+sub         {vertical-align:text-bottom;}
+
+
+
+input,textarea {font-family:'ProximaNovaRegular',Arial, Helvetica, sans-serif; font-size:inherit;font-weight:inherit;}
+
+
+
+select  {font-family:Arial, Helvetica, sans-serif;}
+
+ul 			{list-style-type:none; margin:0; padding:0;}
+
+/*End*/
+
+
+
+body {font-size:13px; font-family:'ProximaNovaRegular',Arial, Helvetica, sans-serif; color:#333; background:#fff;}
+
+a {color:#CF1E11; text-decoration:none; outline:none;}
+
+a:hover {color:#CF1E11; text-decoration:none;}
+
+:focus{outline:0;}
+
+.left {float:left !important;}
+
+.right {float:right !important;}
+
+.relative {position:relative !important;}
+
+.w-fix {float:left; width:100%;}
+
+.w100per {width:100%;}
+
+.mbot30 {margin-bottom:30px}
+
+.mtop10 {margin-top:10px;}
+
+.mtop15 {margin-top:15px;}
+
+.mtop20 {margin-top:20px;}
+
+.mleft10 {margin-left:10px !important;}
+
+.mleft5 {margin-left:5px !important;}
+
+.mleft15 {margin-left:15px;}
+
+.mleft20 {margin-left:20px;}
+
+.clear {clear:both;}
+
+
+
+/*Input Type - Select Option*/
+
+.selectdiv {float:left; width:auto;}
+
+.dd-text {position:absolute; text-indent:5px; line-height:17px; background:#fff url(images/selectarrow.png) no-repeat right center; z-index:0; overflow:hidden; float:left; display:block; width:97.5%; border:1px solid #000; padding:10px 7px 9px; resize:none; color:#666; font-size:14px;border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px;}
+
+select.designer {width:97.5%; z-index:1; position:relative; *top:15px; height:38px; -webkit-appearance:menulist-button;}
+
+/*checkbox*/
+
+.cbox, .cbox-selected {background: url(images/s-cbox.png) no-repeat left top; float: left; height:18px; padding:0 0 0 20px; line-height:22px; cursor:pointer; margin:1px 5px 0 0; font-family:'ProximaNovaRegular',Arial, Helvetica, sans-serif;}
+
+.cbox input, .cbox-selected input {display: none;}
+
+.cbox-selected {background-position: left -50px;}
+
+.cbox .label, .cbox-selected .label {float:left; margin:5px 0 0 8px;}
+
+/*radio button*/
+
+.custom-radio {position: relative; float:left; margin:8px 15px 0 15px;}
+
+.custom-radio input {position: absolute; left:5px; top:5px; *left:0; *top:0; margin:0; z-index:0;}
+
+.custom-radio label {display:block; position:relative; z-index:1; padding-right:1em; padding:.5em 0 .5em 26px; cursor: pointer; margin-left:-2px;}
+
+.custom-radio label {background:url(images/radiobutton.png) no-repeat 2px 2px;}
+
+.custom-radio label.checked {background-position:2px -38px;}
+
+/* textfield */
+
+.textfield {float:left; border:1px solid #000; padding:10px 7px 9px; width:284px;  resize:none; background:#fff; color:#333; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px;}
+
+textarea.textfield {height:60px;}
+
+.field {position: relative; float:left;}
+
+.infield {position:absolute; opacity:1; margin:12px 9px 11px; font-size:14px; color:#666; cursor:text; top:0!important; left:0;}
+
+
+
+/*Website CSS*/
+
+#wrapper {float:left; width:100%; min-width:980px;}
+
+#header-wrap {float:left; width:100%; min-width:980px; background:#fff;}
+
+header {width:980px; margin:0 auto; min-height:31px; padding:13px 0 0;}
+
+.topsec {float:left; width:100%; background:#fff; box-shadow:0 1px 3px #ccc; -moz-box-shadow:0 1px 3px #ccc; -webkit-box-shadow:0 1px 3px #ccc; min-height:44px; position:relative; z-index:1;}
+
+.topsec header .left {font-size:18px; color:#1E0054;}
+
+.topsec header nav {float:right; margin:0 10px 0 0;}
+
+.topsec header nav ul#menu-primary {float:left;}
+
+.topsec header nav  ul#menu-primary > li{float:left; margin-left:20px;}
+
+.topsec header nav ul#menu-primary > li:first-child {margin-left:0;}
+
+.topsec header nav  ul#menu-primary > li > a {color:#666; font-size:16px; font-family:'ProximaNovaRegular',Arial, Helvetica, sans-serif; text-transform:uppercase; float:left;}
+
+.topsec header nav ul#menu-primary > li > a:hover {color:#CF1E11  !important}
+
+ul#menu-primary li.current-menu-item a {color:#CF1E11 !important;}
+
+.image-wrap {float:left; width:100%; min-height:522px; background:url(http://192.185.28.5/~chris/bootstrap/other/top-img.png) no-repeat center;}
+
+.midsec {margin:auto; width:980px; overflow:hidden;}
+
+.image-wrap .leftsec {float:left; width:490px;}
+
+.image-wrap .leftsec .info {font-family: 'open_sans_semiboldregular',Arial, Helvetica, sans-serif; font-size:24px; color:#fff; float:left; width:635px; padding-top:253px;}
+
+
+/* Robert MystudentDiscount*/
+.image-wrap .leftsec .discinfo {font-family: 'open_sans_semiboldregular',Arial, Helvetica, sans-serif; font-size:24px; color:#fff; float:left; width:590px; padding-top:243px;}
+
+
+
+.image-wrap .rightsec .info {font-family: 'open_sans_semiboldregular',Arial, Helvetica, sans-serif; font-size:16px; color:#fff; float:left; width:100%; padding-top:24px; *padding-top:17px;}
+
+.image-wrap .rightsec {float:right; width:490px;}
+
+.form {float:right; width:310px; min-height:364px; background:url(http://192.185.28.5/~chris/bootstrap/other/tpbg.png) repeat; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; margin:15px 0 0; padding:15px 15px 10px 15px;position: relative;}
+
+.form > .title {float:left; width:100%; color:#fff; font-size:24px !important; padding:0 0 10px; margin-left:4px;}
+
+.form > .subtitle {float:left; font-size:14px; color:#fff; padding:0 0 10px; margin-left:4px;}
+
+.form > .tblform {float:left; width:100%; margin-left:4px;}
+
+.form > .tblform tr td {padding:6px 0;}
+
+.form .tblform .textfield {padding:11px 9px 10px; width:284px; font-size:14px;}
+
+.form .tblform .textfield.name {width:126px; *width:122px;}
+
+
+
+.title1 {float:left; width:100%; color: #333333 !important; 
+
+      padding: 0 0 5px;
+
+    font-size:24px !important;}
+
+	
+
+.subtitle1 {float:left;  color: #333333 !important; padding: 0 0 15px; font-size: 14px;    }	
+
+
+
+.title2 {float:left; width:100%; color: #fff !important;
+
+       padding: 0 0 10px; font-size:24px !important;}
+
+	
+
+.subtitle2 {float:left; font-size:14px; color: #fff !important; padding: 0 0 10px;}	
+
+
+
+
+
+.form .tblform .dd-text {width:287px; color:#666;}
+
+.form .tblform .dd-text + .designer {width:302px;}
+
+.redbtn {float:left; min-width:303px; background: #cf1e11; background: -moz-linear-gradient(top,  #cf1e11 0%, #b71c0f 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cf1e11), color-stop(100%,#b71c0f)); background: -webkit-linear-gradient(top,  #cf1e11 0%,#b71c0f 100%); background: -o-linear-gradient(top,  #cf1e11 0%,#b71c0f 100%); background: -ms-linear-gradient(top,  #cf1e11 0%,#b71c0f 100%); background: linear-gradient(to bottom,  #cf1e11 0%,#b71c0f 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf1e11', endColorstr='#b71c0f',GradientType=0 ); border:none; cursor:pointer; padding:10px 0; color:#fff; font-family: 'open_sansregular',Arial, Helvetica, sans-serif; text-transform:uppercase; text-shadow:0 1px 1px #333; font-size:20px; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px;}
+
+.redbtn:hover {background: #ec2717; background: -moz-linear-gradient(top,  #ec2717 0%, #ce1f11 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ec2717), color-stop(100%,#ce1f11)); background: -webkit-linear-gradient(top,  #ec2717 0%,#ce1f11 100%);
+
+background: -o-linear-gradient(top,  #ec2717 0%,#ce1f11 100%); background: -ms-linear-gradient(top,  #ec2717 0%,#ce1f11 100%);
+
+background: linear-gradient(to bottom,  #ec2717 0%,#ce1f11 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec2717', endColorstr='#ce1f11',GradientType=0 );}
+
+.greybox {float:left; width:100%; min-height:210px; background:url(images/greybg.jpg) repeat-x;}
+
+.greyboxin {float:left; width:100%; min-height:86px; text-align:center; padding:20px 0;}
+
+.greyboxin .info {display:inline-block; font-size:25px; color:#333; text-shadow:0 1px 1px #fff; padding:0 0 15px;}
+
+.greyboxin .blueredbg {float:left; width:100%; background:url(images/blue-redbg.png) no-repeat; height:126px;}
+
+.blueredbg .tblinfo {width:940px; color:#fff; font-family:'open_sansbold',Arial, Helvetica, sans-serif; margin:36px auto;}
+
+.blueredbg .tblinfo tr td {text-align:left; padding:3px 0; vertical-align:top;}
+
+.blueredbg .tblinfo tr td:first-child {width:266px; padding-left:10px;}
+
+.blueredbg .tblinfo tr td:first-child + td + td {width:137px;}
+
+.blueredbg .tblinfo tr td:first-child + td + td + td {width:175px;}
+
+.blueredbg .tblinfo tr td:first-child + td + td + td + td {width:242px; margin-left:15px;}
+
+.blueredbg .tblinfo .midtxt {float:left; width:113px; display:block; text-align:center; padding-top:13px;}
+
+#main-container {width:100%; float:left; background:#fff; min-height:430px; clear:both;}
+
+.container {width:980px; margin:auto; overflow:hidden; padding-bottom:20px;}
+
+.logo {width:194px; height:194px; float:left;}
+
+.container .title {font-size:40px; padding:25px 0 20px; font-family:'proxima_nova_light',Arial, Helvetica, sans-serif; float:left;}
+
+.container .title1 {font-size:30px; padding:25px 0 20px; font-family:'proxima_nova_light',Arial, Helvetica, sans-serif; float:left;}
+
+.container p {line-height:20px; font-size:14px; padding:10px 0; width:100%; float:left;}
+
+/*.container p + p {font-family: 'open_sans_semiboldregular',Arial, Helvetica, sans-serif;}*/
+
+.container .list {float:left; width:100%; padding:20px 0;}
+
+.container .list li {/*float:left;*/ width:640px; background:url(images/listbg.png) no-repeat left; border-radius:0 4px 0 4px; -moz-border-radius:0 4px 0 4px; height:28px; -webkit-border-radius:0 4px 0 4px; margin:0 10px 20px 0; font-size:13px; position:relative; padding:12px 0 0 50px; font-family: 'open_sans_semiboldregular',Arial, Helvetica, sans-serif;}
+
+.container .list li span {width:40px; height:40px; font-size:30px; color:#fff; font-family: 'gnuolane_freeregular',Arial, Helvetica, sans-serif; text-align:center; position:absolute; padding:0; left:0; top:3px;}
+
+/* footer */
+
+#footer-wrap {float:left; width:100%; background:url(images/footerbg.jpg) repeat-x; min-height:128px;}
+
+footer {width:1100px; margin:auto; padding:22px 0 0; height: 200px; }
+
+.center {width:100%; margin:auto; font-family: 'open_sansregular',Arial, Helvetica, sans-serif; overflow:hidden;}
+
+.center .fleft {float:left; width:40%;}
+
+.center .fleft .info {font-size:13px; float:left; color:#fff;}
+
+.center .fleft .info + .info {color:#fff; font-size:22px; float:left; padding-top:6px;}
+
+.center .fright {float:right;}
+
+.center .fright .flinks {float:left; margin:0 10px 0 0;}
+
+.center .fright .flinks li {float:left; margin-left:10px;}
+
+.center .fright .flinks li:first-child {margin-left:0;}
+
+.center .fright .flinks li a {float:left; color:#fff;}
+
+.center .fright .flinks li a:hover{color:#CF1E11}
+
+.center .fright .flinks li.current-menu-item a {color:#CF1E11 !important;}
+
+/* error message */
+
+.error {background:#e1e1e1; padding:4px 7px; border-radius:4px; color:#CF1E11; font-size:13px; position:absolute; right:-20px; bottom:30px; z-index:10; max-width:210px; display:none;}
+
+.error em {width:0; height:0; border-left:-5px solid transparent; border-right:5px solid transparent; border-top:5px solid #e1e1e1; position:absolute; bottom:-5px; left:8px;}
+
+.form .tblform  .textfield.errfld, .innerright .form .tblform .textfield.errfld {border-color:#CE1E11;}
+
+
+
+/* Inner page */
+
+.innerpage .image-wrap {background:url(images/top-img-in.jpg) repeat-x; min-height:175px;}
+
+.innerpage .image-wrap .midsec {background:url(images/top-img-center.png) no-repeat center; padding:0 80px;}
+
+.innerpage .logo {width:140px; height:146px; margin:14px 0 0;}
+
+.innerpage .image-wrap .leftsec {min-height:172px;}
+
+/*.innerpage .container p + p {font-family:'ProximaNovaRegular',Arial, Helvetica, sans-serif;}*/
+
+.innerpage .image-wrap .rightsec .info {color:#333; font-family:'proxima_nova_light',Arial, Helvetica, sans-serif; float:right; width:auto; padding-top:10px; margin:0 10px 0 0; font-size:16px;}
+
+.infored {color:#CE1E11; font-size:24px; font-family:'proxima_nova_light',Arial, Helvetica, sans-serif; float:right; padding-top:60px; margin:0 10px 0 0;}
+
+.container .innerleft .title {width:100%; padding:25px 0 4px;}
+
+.innerleft {width:600px; margin-right:20px; float:left;}
+
+.innerright {width:350px; float:left;}
+
+.container .innerleft .list li {width:470px; height:68px; background:url(images/listbg-inner.png) no-repeat; color:#333; font-size:20px;font-family:'proxima_nova_light',Arial, Helvetica, sans-serif; padding:42px 0 0 130px;}
+
+.container .innerleft .list li .call {width:52px; height:36px; background:url(images/icons.png) no-repeat; background-position:0 0; top:19px; left:28px;}
+
+.container .innerleft .list li .email {width:52px; height:33px; background:url(images/icons.png) no-repeat; background-position:1px -44px; top:38px; left:28px;}
+
+
+
+.innerright .form {background:#F5F5F5; margin:0; border-radius:0 0 5px 5px; -moz-border-radius:0 0 5px 5px; -webkit-border-radius:0 0 5px 5px; position:relative; z-index:1; box-shadow:0 0 3px #999; -moz-box-shadow:0 0 3px #999; -webkit-box-shadow:0 0 3px #999;}
+
+.innerright .form > .title {padding:0 0 5px; color:#333; font-size:24px;}
+
+.innerright .form > .subtitle {padding:0 0 15px; color:#333; font-size:14px;}
+
+.innerright .form .tblform .textfield {border-color:#C7C7C7; box-shadow:inset 0 2px 2px #eee; -moz-box-shadow:inset 0 2px 2px #eee; -webkit-box-shadow:inset 0 2px 2px #eee;}
+
+.innerright .form .tblform .dd-text  {border-color:#C7C7C7; box-shadow:inset 0 2px 2px #eee; -moz-box-shadow:inset 0 2px 2px #eee; -webkit-box-shadow:inset 0 2px 2px #eee;}
+
+.container .innerleft .title + p {padding:30px 0 0;}
+
+.innerpage .sep {background:url(images/sep.png) repeat-x 0 80px !important;}
+
+.innerpage .topsec {box-shadow:none; -moz-box-shadow:none; -webkit-box-shadow:none;}
+
+.innerpage .image-wrap .rightsec {min-height:175px; background:url(images/formtop.png) no-repeat bottom right;}
+
+
+
+/* Services page */
+
+.container.services .innerleft .list {padding:10px 0 0;}
+
+.container.services .innerleft .list li {background:url(images/listbg-services.png) no-repeat; width:535px; height:35px; padding:0; color:#25085A; font-size:20px; padding:15px 0 0 65px; font-family:'ProximaNovaRegular',Arial, Helvetica, sans-serif; margin:0;}
+
+.container.services .innerleft .list li span {width:40px; height:40px; font-size:30px; color:#CE1E11; font-family: 'gnuolane_freeregular',Arial, Helvetica, sans-serif; text-align:center; position:absolute; padding:0; left:4px; top:8px;}
+
+.container.services .innerleft .list2 {float:left; width:517px; margin:15px 0 20px;}
+
+.container.services .innerleft .list2 li {border-bottom:1px dotted #ccc; padding:7px 0 7px 18px; background:url(images/list2-dot.jpg) no-repeat left 12px;}
+
+.call {float:left; width:585px; background:url(images/callbg.jpg) no-repeat; height:85px; padding:25px 0 0 15px; margin:15px 0;}
+
+.call .info {color:#fff; font-family:'ProximaNovaRegular'; font-size:16px; float:left; padding-bottom:10px; width:100%;}
+
+.call .info2 {font-size:30px; font-family:'ProximaNovaRegular'; color:#fff; float:left; font-weight:bold;}
+
+
+
+
+
+/* Faq page */
+
+.container.faq .innerleft .title {padding:25px 0;}
+
+.expandablediv {float:left; width:600px; margin:20px 0 0;}
+
+.expandablediv:first-child {margin:0;}
+
+.expandablediv .grnhead {width:100%; height:40px; cursor:pointer; border-radius:5px 5px 0 0; -moz-border-radius:5px 5px 0 0; -webkit-border-radius:5px 5px 0 0;
+
+background: #ffffff;
+
+background: -moz-linear-gradient(top,  #ffffff 0%, #f5f5f5 100%);
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f5f5f5));
+
+background: -webkit-linear-gradient(top,  #ffffff 0%,#f5f5f5 100%);
+
+background: -o-linear-gradient(top,  #ffffff 0%,#f5f5f5 100%);
+
+background: -ms-linear-gradient(top,  #ffffff 0%,#f5f5f5 100%);
+
+background: linear-gradient(to bottom,  #ffffff 0%,#f5f5f5 100%);
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f5f5',GradientType=0 ); border:1px solid #ccc;}
+
+.expandablediv .grnhead h3 {color:#250759; font-size:15px; margin:10px 0 0 10px; float:left;}
+
+.expandablediv .grnhead span {margin:14px 12px 0 0; background:url(images/arrowdwn.png) no-repeat; float:right; width:14px; height:14px;}
+
+.expandablediv .grnhead.active span  {background:url(images/arrowup.png) no-repeat;}
+
+.expandablediv .grnhead a {color:#fff; float:left;}
+
+.expandablediv .grnhead a:hover {color:#fff;}
+
+.expandablediv .opendiv {float:left; width:100%; position:relative; border-right:1px solid #ccc;  border-left:1px solid #ccc; border-bottom:1px solid #ccc; border-radius:0 0 5px 5px; -webkit-border-radius:0 0 5px 5px; -moz-border-radius:0 0 5px 5px;}
+
+.opendiv .ans {float:left; color:#250759; font-size:16px; width:25px;}
+
+.opendiv p {float:left; width:540px;}
+
+.opendiv .ans, .opendiv p {padding:12px 0 12px 12px;}
+
+.opendiv p {padding-left:0;}
+
+.expandablediv .opendiv  .openblock {float:left; width:590px; margin:0 0 15px 20px; padding:0;}
+
+.openblock li {background:url(images/li-arrow.png) no-repeat left 4px; float:left; padding-left:10px; width:500px; list-style:none; margin:2px 0; color:#333; line-height:20px;}
+
+.openblock li {border-bottom:1px dotted #ccc; padding:7px 0 7px 18px; background:url(images/list2-dot.jpg) no-repeat left 12px;}
+
+/* accordin */
+
+
+
+/* Contact page */
+
+.innerpage.contact .innerleft, .innerpage.contact .innerright {padding:25px 0 0;}
+
+.innerpage.contact .innerleft .title {padding:0 0 4px;}
+
+.innerpage.contact .innerleft {width:510px;}
+
+.innerpage.contact .innerright {width:450px;}
+
+.innerpage.contact .image-wrap .rightsec {background:none;}
+
+.innerpage.contact .innerleft .list {margin:20px 0 0;}
+
+/*.innerpage.contact .innerleft .list br { line-height:0px !important; font-size:0px !important; display:none!important; padding:0 !important; margin:0 !important;}*/
+
+.innerpage.contact .innerleft .list li {background:none; border:1px solid #fff; padding:10px 0; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; margin:0 0 35px 0;}
+
+.innerpage.contact .innerleft .list li .info {font-size:14px; color:#333;text-align:left; width:420px; margin:10px 0 0 90px; font-family:'ProximaNovaRegular',Arial, Helvetica, sans-serif; position:absolute; top:10px;}
+
+.innerpage.contact .innerleft .list li span {width:70px; height:70px; top:10px; left:10px;}
+
+.innerpage.contact .innerleft .list li .info .title {font-size:17px; font-weight:bold; padding:0; margin:0; color:#333; float:left;}
+
+.innerpage.contact .innerleft .list li .client {background:url(images/icons-contact.png) no-repeat; background-position:0 0;}
+
+.innerpage.contact .innerleft .list li:hover {background:#f7f7f7; border:1px solid #ddd;}
+
+.innerpage.contact .innerleft .list li:hover .client {background-position:-70px 0;}
+
+.innerpage.contact .innerleft .list li:hover .email {background-position:-70px -71px;}
+
+.innerpage.contact .innerleft .list li:hover .affiliate {background-position:-70px -142px;}
+
+.innerpage.contact .innerleft .list li .email {background:url(images/icons-contact.png) no-repeat; background-position:0 -71px;}
+
+.innerpage.contact .innerleft .list li .affiliate {background:url(images/icons-contact.png) no-repeat; background-position:0 -142px;}
+
+.innerpage.contact .innerleft .list li .info .infored {padding:0; margin:0; font-size:14px; float:left;}
+
+.innerpage.contact .container .innerleft .title + p {padding:0;}
+
+.map {float:left; width:450px;}
+
+.map iframe {float:left; margin:16px 0 0;}
+
+.map .redbox {float:left; width:100%; height:20px; padding:10px 0; text-align:center; color:#fff; background:#D02518; font-size:15px;}
+
+.add {float:left; width:450px; font-size:14px;}
+
+.add .title {font-size:17px; font-family:'ProximaNovaRegular',Arial, Helvetica, sans-serif; padding:15px 0 0; font-weight:bold;}
+
+.add .info {float:left; width:100%; padding:16px 0 2px 0;}
+
+.add .info + .info {padding:6px 0 4px;}
+
+
+
+
+
+/* error message */
+
+.error-message {width:100%; background:url(images/errorbg.png) repeat; height:200px; position:fixed; z-index:9; top:0; left:0; text-align:center;}
+
+.error-message > .info {font-size:23px; color:#fff; width:980px; margin:70px auto 0; font-family:'proxima_nova_light',Arial, Helvetica, sans-serif; display:inline-block; line-height:28px;}
+
+
+
+/* loader */
+
+.loader {width:100%; height:100%; text-align:center; position:absolute; z-index:11; background:url(images/wh-bg.png) repeat; left:0; top:0}
+
+.loader .thumb {display:inline-block; padding:220px 0 0; width:31px; height:31px;}
+
+
+
+
+
+.innerpage.thanks .image-wrap .rightsec {background:none;} 
+
+.list2 {float:left; width:517px; margin:15px 0 20px;}
+
+.list2 li {border-bottom:1px dotted #ccc; padding:7px 0 7px 18px; background:url(images/list2-dot.jpg) no-repeat left 12px;}
+
+.form .tblform .textfield.phone {width:75px; *width:68px;}
+
+
+
+
+
+
+
+/*for comment*/
+
+.comments_section{
+
+	width:580px;
+
+	display:block;
+
+	clear:both;
+
+	color:#666;
+
+	font:normal 15px/24px 'proxima_nova_light',Arial,Helvetica,sans-seri !important;
+
+	padding:15px 15px 15px 0;
+
+}
+
+.comments_section ul li{
+
+	width:auto;
+
+	float:left;
+
+	padding:0;
+
+	margin:0;
+
+}
+
+.comments_section ul li div.info{
+
+	width:400px;
+
+	height:82px;
+
+	float:left;
+
+	display:block;
+
+	padding:0px 0 0 35px;
+
+}
+
+.comments_section ul li div.info h3{
+
+	font:normal 16px/18px 'proxima_nova_light',Arial,Helvetica,sans-serif;
+
+	color:#50F03;
+
+	background-color:inherit;
+
+}
+
+.comments_section ul li div.info p {font:normal 14px/18px 'proxima_nova_light',Arial,Helvetica,sans-serif; padding: 0px !important;}
+
+
+
+.comments_section ul li div.info p span{
+
+	color:#000;
+
+	background-color:inherit;
+
+}
+
+
+
+ul.children{ padding:0; margin-left:15px;
+
+
+
+}
+
+ul.children li{
+
+	width:auto;
+
+	float:left;
+
+	padding:0;
+
+	margin:0;
+
+}
+
+
+
+ul.children li ul li div.info{
+
+	width:420px;
+
+}
+
+ul.children li ul li div.info h3{
+
+	color:#bc2229;
+
+	background-color:inherit;
+
+}
+
+ul.children li ul li div.info p span{
+
+	color:#000;
+
+	background-color:inherit;
+
+}
+
+
+
+div.info_panel{
+
+	padding-bottom:20px;
+
+	font-size:14px;
+
+	line-height:19px;
+
+}
+
+div.info_panel p{
+
+	padding:0 !important;
+
+	
+
+}
+
+div.info_panel p span{
+
+	color:#c03137;
+
+	background-color:inherit;
+
+}
+
+
+
+/*******************/
+
+h3#comments,.comment-navigation,.comment-navigation:after,#respond:after,.comment-rss{display:block} 
+
+ol.commentlist{width:100%} 
+
+h3#comments,#respond h3{text-align:left; color:#000 !important; font-family: 'proxima_nova_light',Arial,Helvetica,sans-serif;
+
+    font-size: 24px;} 
+
+ol.commentlist,li.authorcomment,li.comment,#respond h3,form#commentform{margin:0}
+
+ol.commentlist,ol.commentlist ul,form#commentform{padding:0}  
+
+ol.commentlist{ margin-top:20px;} 
+
+ol.commentlist ul{margin:0 0 0 20px} 
+
+
+
+li.authorcomment,li.comment{padding:10px 0 0 0px;list-style:none;border-bottom:none} 
+
+/*li.even{background:#fff} 
+
+li.odd{background:#efefef}*/ 
+
+.authorcomment{background:#deebf9} 
+
+ul.children ul{} 
+
+ul.children li{border-right:none} 
+
+.vcard img{float:left;background:#c4c4c4} 
+
+.vcard img,.comment-navigation .newer a,.comment-navigation .older a{padding:5px} 
+
+.comment-meta,ol.commentlist li small,p.subscribe-to-comments label{position:relative} 
+
+.comment-meta,ol.commentlist li small{top:10px;left:10px} 
+
+.comment-text{margin:0 10px 0 0} 
+
+.reply,.comment-navigation .newer,input#submit{float:right} 
+
+.reply,.comment-navigation .newer a,.comment-navigation .older a{background:#a4a4a4; width:70px;} 
+
+
+
+.reply{margin:0 10px 10px 0} 
+
+
+
+a.comment-reply-link, .comment-navigation .newer a,.comment-navigation .older a{display:inline-block;text-align:center;cursor:pointer;color:#000} 
+
+
+
+a.comment-reply-link:hover,.reply a:hover,.comment-navigation .newer a:hover, .comment-navigation .older a:hover{background: -moz-linear-gradient(center top , #CF1E11 0%, #B71C0F 100%) repeat scroll 0 0 transparent !important;
+
+    border: medium none;
+
+    border-radius: 3px 3px 3px 3px;text-decoration:none;color:#000;font-weight: normal !important; width:70px; padding:5px 0} 
+
+
+
+
+
+.comment-navigation{margin:10px 0 10px 0} 
+
+.comment-navigation:after,#respond:after{content:".";height:0;visibility:hidden} 
+
+.clear{clear:both} 
+
+.comment-navigation .newer a:hover,.comment-navigation .older a:hover{padding:4px} 
+
+
+
+form#commentform textarea{font-family:'ProximaNovaRegular',Arial, Helvetica, sans-serif; 
+
+	font-size: 14px;
+
+    padding: 11px 9px 10px;
+
+    width: 525px !important;
+
+    box-shadow: 0 2px 2px #EEEEEE inset; 
+
+	background: none repeat scroll 0 0 #FFFFFF;
+
+    border: 1px solid #C7C7C7;
+
+    border-radius: 3px 3px 3px 3px;
+
+    color: #333333;
+
+    float: left;
+
+   padding: 10px 10px; min-height:150px; height:auto !important; }
+
+  
+
+input#submit, .reply a{background:#B71C0F !important;
+
+    border: medium none;
+
+    border-radius: 3px 3px 3px 3px;
+
+    color: #FFFFFF;
+
+    cursor: pointer;
+
+    float: left;
+
+    font-family: 'open_sansregular',Arial,Helvetica,sans-serif;
+
+    font-size: 20px;
+
+    width:80px !important;
+
+    padding: 10px 0;
+
+    text-shadow: 0 1px 1px #333333;
+
+    text-transform: uppercase;} 
+
+	
+
+a.comment-reply-link:hover,.reply a:hover,input#submit:hover{
+
+	background: background:#B71C0F !important;
+
+    border: medium none;
+
+    border-radius: 3px 3px 3px 3px;
+
+    color: #FFFFFF;
+
+    cursor: pointer;
+
+    float: left;
+
+    font-family: 'open_sansregular',Arial,Helvetica,sans-serif;
+
+    font-size: 20px;
+
+    width:80px !important;
+
+    padding: 10px 0;
+
+    text-shadow: 0 1px 1px #333333;
+
+    text-transform: uppercase;} 
+
+
+
+.comform { margin-top:30px !important;}
+
+
+
+	
+
+#recentPost {
+color: #EEEEEE;
+display: block;
+clear: both;
+margin-top: 20px;
+width: 350px;
+line-height: 20px;
+}
+
+
+#recentPost a{color: #EEEEEE; }
+
+
+
+#recentPost a:hover {color: #EEEEEE; }
+
+
+
+#recentPost h3 {color: #EEEEEE; font-weight:bold; margin:30px 0 10px 0; }
+
+
+
+.cfinput{font-family:'ProximaNovaRegular',Arial, Helvetica, sans-serif; 
+
+	font-size: 14px;
+
+    padding: 11px 9px 10px;
+
+    box-shadow: 0 2px 2px #EEEEEE; 
+
+	border: 1px solid #C7C7C7;
+
+    border-radius: 3px 3px 3px 3px;
+
+    color: #333333;
+
+    float: left;
+
+    padding: 10px 10px; width:284px;}
+	.tabletext{
+line-height: 20px;
+font-size: 14px;
+padding:5px 10px 10px 10px;
+width:490px !important;
+
+
+	}
+</style>
+
+
+<script type="text/javascript" src="http://www.studentloanservice.us/wp-content/themes/sls/js/html5.js"></script>
+
+<![endif]-->
+
+<!--Script-->
+
+<script type="text/javascript" src="http://www.studentloanservice.us/wp-content/themes/sls/js/jquery-1.8.0.min.js"></script>
+
+<script type="text/javascript" src="http://www.studentloanservice.us/wp-content/themes/sls/js/common.js"></script>
+
+<script type="text/javascript" src="http://www.studentloanservice.us/wp-content/themes/sls/js/label-infields.js"></script>
+
+<script type="text/javascript">
+
+$(function(){
+	setTab(1);
+    footerTab(1);
+});
+
+function phoneAutoTab(phone,nextField)
+{
+
+
+   if(phone.value.length == 3)
+   {
+      document.getElementById("txtF0"+nextField).value = ""
+      document.getElementById("txtF0"+nextField).focus()
+   }
+}
+
+
+
+
+function submitForm()
+{
+
+                
+		$('.loader').fadeIn('fast');
+                var datadata = ""+fname+","+lname+"" 
+                console.log(datadata)
+                var formData = {
+                    "key": "4ZhAl-7vZL-ZwmiMKozwBQ",
+                    "message": {
+                        "text": datadata,
+                        "subject": "Easy Student Loan",
+                        "from_email": email,
+                        "from_name": name,
+                        "to": [
+                            {
+                            "email": "carbonizon@gmail.com",
+                            "name": "Chris Kanze",
+                            "type": "to"
+                            }
+                        ]
+                    }
+                };
+    
+                $.ajax({
+                    url : "https://mandrillapp.com/api/1.0/messages/send.json",
+                    type: "POST",
+                    data : formData,
+                    success: function(data, textStatus, jqXHR){
+                        $('.loader').delay(1000).fadeOut('fast');
+			
+			
+                    },
+                    error: function (jqXHR, textStatus, errorThrown){
+                        alert("Posting Error try again ?");
+                    }
+                });
+
+
+
+}
+
+
+
+function isEmpty(str){
+
+	   str = $.trim(str);
+	   if(str==null || str=="")
+     		return true;
+	   
+	   return false;
+
+}
+
+function chk_validate1(){
+
+     fields = new Array()
+	 fields["First Name"] = "txtF01"
+	 fields["Last Name"] = "txtF02"
+	 fields["Email"] = "txtF03"
+	 fields["Phone1"] = "txtF04"
+	 fields["Phone2"] = "txtF05"
+	 fields["Phone3"] = "txtF06"
+	 fields["State"] = "dSelect1"
+	 fields["Student Debt Amount"] = "dSelect2"
+	 fields["Credit Card Debt"] = "dSelect3"
+	 
+	 
+     
+     
+     fname =  document.getElementById("txtF01").value     //fname - txtF01
+	 lname =  document.getElementById("txtF02").value     //lname - txtF02
+	 email =  document.getElementById("txtF03").value     //email - txtF03
+	 phone1 =  document.getElementById("txtF04").value    //phone1 - txtF04
+	 phone2 =  document.getElementById("txtF05").value    //phone2 - txtF05
+	 phone3 =  document.getElementById("txtF06").value    //phone3 - txtF06
+	 state =  document.getElementById("dSelect1").value    //dSelect1 - txtF07
+	 studentDebtAmt =  document.getElementById("dSelect2").value //dSelect2 - txtF08
+	 creditCardDebt =  document.getElementById("dSelect3").value //dSelect3 - txtF09
+
+	 
+for( obj in  fields )
+{
+     objId = fields[obj]
+     text = document.getElementById(objId).value
+	 
+	  if(text == "")
+	  {
+	       
+		    document.getElementById(objId).style.border = "2px solid red";
+			errorMessage = " * "+obj.toUpperCase()
+			alert("Please Enter your "+errorMessage)
+			document.getElementById(objId).focus()
+			
+			return  false					
+	 }
+	 else
+	    document.getElementById(objId).style.border = "1px solid #CCCCCC"
+	
+	if(objId == "txtF03")
+				if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.getElementById(objId).value)) {
+	
+				} else {
+	
+					document.getElementById(objId).style.border = "1px solid red";
+					alert('Please Enter a valid Email Address');
+					document.getElementById(objId).style.border = "2px solid red";
+					errorMessage = " * "+obj.toUpperCase()
+					document.getElementById(objId).focus();
+	
+					return false;
+	
+				}	
+
+
+}
+
+
+
+    
+		   submitForm()
+
+
+}
+
+function validate_for_integer_price(inputfield, inputevent) {
+
+	 var key;
+
+	 var keychar;
+
+	 
+
+	 if (window.event) {
+
+	  key = window.event.keyCode;
+
+	 } else if (inputevent) {
+
+	  key = inputevent.which;
+
+	 } else {
+
+	  return true;
+
+	 }
+
+	 
+
+	 keychar = String.fromCharCode(key);
+
+	 // control keys
+
+	 if ((key==null) || (key==0) || (key==8) ||
+
+		  (key==9) || (key==13) || (key==27)) {
+
+	  return true;
+
+	 
+
+	 // numbers
+
+	 } else if (("0123456789.").indexOf(keychar) > -1) {
+
+	  return true;
+
+	  
+
+	 } else {
+
+	  return false;
+
+	 }
+
+}
+</script>
+                <aside class="rightsec">
+                                    <aside class="form">
+
+                        <aside style="display: none;" class="loader">
+
+                            <aside class="thumb"><img width="31" height="31" alt="" src="http://www.studentloanservice.us/wp-content/themes/sls/images/loading.gif"></aside>
+
+                        </aside> 
+						<div class="tblform">			<div class="textwidget"> <h2 class="title2">Start Here</h2>
+                        
+		</div><div class="tblform">			<div class="textwidget"><form method="post" name="loan_info" action="" class="tblform" id="loan_info">
+                        <table class="tblform">
+                            <tr>
+                                <td><aside class="field">
+                                        <input name="fname" type="text" class="textfield name" value="" placeholder="First Name" id="txtF01" />
+                                    </aside>
+                                    <aside class="field mleft10">
+                                        
+                                        <input name="lname" type="text" class="textfield name" placeholder="Last Name" value="" id="txtF02" />
+                                    </aside></td>
+                            </tr>
+                            <tr>
+                                <td><aside class="field dummyerror">
+                                        
+                                        <input name="email" type="text" class="textfield" placeholder="Email" value="" id="txtF03" />
+                                        <span class="error" style="display:none;" id="email_error">Email not empty!<em></em></span>
+                                        <span class="error" style="display:none;" id="email_error1">Not valid email address!<em></em></span></aside></td>
+                            </tr>
+                            <tr>
+                            
+                                <td><aside class="field">
+                                        
+                                        <input name="phone1" placeholder="Phone" type="text" class="textfield phone" maxlength="3" id="txtF04" onKeyPress="return validate_for_integer_price(this, event)"  onkeyup=phoneAutoTab(this,5) />
+                                    </aside>
+                                    <aside class="field mleft10">
+                                        
+                                        <input name="phone2" placeholder="Phone" type="text" class="textfield phone" maxlength="3" id="txtF05" onKeyPress="return validate_for_integer_price(this, event)"  onkeyup=phoneAutoTab(this,6) />
+                                    </aside>
+                                    <aside class="field mleft10">
+                                        
+                                        <input name="phone3" placeholder="Phone" type="text" class="textfield phone" maxlength="4" id="txtF06"  onkeypress="return validate_for_integer_price(this, event)" />
+                                    </aside>
+                                   <!-- <aside class="field dummyerror">
+                                        <label for="txtF04" class="infield" id="passw">Password</label>
+                                        <input name="password" type="password" class="textfield" value="" id="txtF04" />
+                                        <span class="error" style="display:none;" id="password_error">Password not empty!<em></em></span> </aside>--></td>
+                            </tr>
+                            <tr>
+                                <td><aside class="selectdiv"> <span class="dd-text"></span>
+                                        <select name="dSelect1" class="designer"  id="dSelect1" size="1">
+                                            
+                                            <option selected="selected" value="">State</option> 
+                                                    <option value="AL">Alabama</option> 
+                                                    <option value="AK">Alaska</option> 
+                                                    <option value="AZ">Arizona</option> 
+                                                    <option value="AR">Arkansas</option> 
+                                                    <option value="CA">California</option> 
+                                                    <option value="CO">Colorado</option> 
+                                                    <option value="CT">Connecticut</option> 
+                                                    <option value="DE">Delaware</option> 
+                                                    <option value="DC">District Of Columbia</option> 
+                                                    <option value="FL">Florida</option> 
+                                                    <option value="GA">Georgia</option> 
+                                                    <option value="HI">Hawaii</option> 
+                                                    <option value="ID">Idaho</option> 
+                                                    <option value="IL">Illinois</option> 
+                                                    <option value="IN">Indiana</option> 
+                                                    <option value="IA">Iowa</option> 
+                                                    <option value="KS">Kansas</option> 
+                                                    <option value="KY">Kentucky</option> 
+                                                    <option value="LA">Louisiana</option> 
+                                                    <option value="ME">Maine</option> 
+                                                    <option value="MD">Maryland</option> 
+                                                    <option value="MA">Massachusetts</option> 
+                                                    <option value="MI">Michigan</option> 
+                                                    <option value="MN">Minnesota</option> 
+                                                    <option value="MS">Mississippi</option> 
+                                                    <option value="MO">Missouri</option> 
+                                                    <option value="MT">Montana</option> 
+                                                    <option value="NE">Nebraska</option> 
+                                                    <option value="NV">Nevada</option> 
+                                                    <option value="NH">New Hampshire</option> 
+                                                    <option value="NJ">New Jersey</option> 
+                                                    <option value="NM">New Mexico</option> 
+                                                    <option value="NY">New York</option> 
+                                                    <option value="NC">North Carolina</option> 
+                                                    <option value="ND">North Dakota</option> 
+                                                    <option value="OH">Ohio</option> 
+                                                    <option value="OK">Oklahoma</option> 
+                                                    <option value="OR">Oregon</option> 
+                                                    <option value="PA">Pennsylvania</option> 
+                                                    <option value="RI">Rhode Island</option> 
+                                                    <option value="SC">South Carolina</option> 
+                                                    <option value="SD">South Dakota</option> 
+                                                    <option value="TN">Tennessee</option> 
+                                                    <option value="TX">Texas</option> 
+                                                    <option value="UT">Utah</option> 
+                                                    <option value="VT">Vermont</option> 
+                                                    <option value="VA">Virginia</option> 
+                                                    <option value="WA">Washington</option> 
+                                                    <option value="WV">West Virginia</option> 
+                                                    <option value="WI">Wisconsin</option> 
+                                                    <option value="WY">Wyoming</option>
+                                        </select>
+                                    </aside></td>
+                            </tr>
+                            <tr>
+                                <td><aside class="selectdiv"> <span class="dd-text"></span>
+                                        <select name="dSelect2" class="designer"  id="dSelect2" size="1">
+                                           
+                                            <option value="">Student Loan Debt Amount</option>
+                                                                                                        <option value="10000">$0 - $10,000                                                                                                        </option><option value="20000">$10,000 - $20,000                                                                                                        </option><option value="30000">$20,000 - $30,000                                                                                                        </option><option value="40000">$30,000 - $40,000                                                                                                        </option><option value="50000">$40,000 - $50,000                                                                                                        </option><option value="60000">$50,000 - $60,000                                                                                                        </option><option value="70000">$60,000 - $70,000                                                                                                        </option><option value="80000">$70,000 - $80,000                                                                                                        </option><option value="90000">$80,000 - $90,000                                                                                                        </option><option value="100000">$90,000 - $100,000                                                                                                        </option><option value="110000">$100,000 - $110,000                                                                                                        </option><option value="120000">$110,000 - $120,000                                                                                                        </option><option value="130000">$120,000 - $130,000                                                                                                        </option><option value="140000">$130,000 - $140,000                                                                                                        </option><option value="150000">$140,000 - $150,000                                                                                                        </option><option value="160000">$150,000 - $160,000                                                                                                        </option><option value="170000">$160,000 - $170,000                                                                                                        </option><option value="180000">$170,000 - $180,000                                                                                                        </option><option value="190000">$180,000 - $190,000                                                                                                        </option><option value="200000">$190,000 - $200,000                                                                                                        </option><option value="210000">$200,000 - $210,000                                                                                                        </option><option value="220000">$210,000 - $220,000                                                                                                        </option><option value="230000">$220,000 - $230,000                                                                                                        </option><option value="240000">$230,000 - $240,000                                                                                                        </option><option value="250000">$240,000 - $250,000                                                                                                        </option><option value="260000">$250,000 - $260,000                                                                                                        </option><option value="270000">$260,000 - $270,000                                                                                                        </option><option value="280000">$270,000 - $280,000                                                                                                        </option><option value="290000">$280,000 - $290,000                                                                                                        </option><option value="300000">$290,000 - $300,000                                                                                                        </option><option value="300000">$300,000+</option>
+                                        </select>
+                                    </aside></td>
+                            </tr>
+                            <tr>
+                                <td><aside class="selectdiv"> <span class="dd-text"></span>
+                                        <select name="dSelect3" class="designer"  id="dSelect3" size="1">
+                                            
+                                               <option value="">Credit Card Debt Amount</option>
+                                                                                                        <option value="10000">$0 - $10,000                                                                                                        </option><option value="20000">$10,000 - $20,000                                                                                                        </option><option value="30000">$20,000 - $30,000                                                                                                        </option><option value="40000">$30,000 - $40,000                                                                                                        </option><option value="50000">$40,000 - $50,000                                                                                                        </option><option value="60000">$50,000 - $60,000                                                                                                        </option><option value="70000">$60,000 - $70,000                                                                                                        </option><option value="80000">$70,000 - $80,000                                                                                                        </option><option value="90000">$80,000 - $90,000                                                                                                        </option><option value="100000">$90,000 - $100,000                                                                                                        </option><option value="110000">$100,000 - $110,000                                                                                                        </option><option value="120000">$110,000 - $120,000                                                                                                        </option><option value="130000">$120,000 - $130,000                                                                                                        </option><option value="140000">$130,000 - $140,000                                                                                                        </option><option value="150000">$140,000 - $150,000                                                                                                        </option><option value="160000">$150,000 - $160,000                                                                                                        </option><option value="170000">$160,000 - $170,000                                                                                                        </option><option value="180000">$170,000 - $180,000                                                                                                        </option><option value="190000">$180,000 - $190,000                                                                                                        </option><option value="200000">$190,000 - $200,000                                                                                                        </option><option value="210000">$200,000 - $210,000                                                                                                        </option><option value="220000">$210,000 - $220,000                                                                                                        </option><option value="230000">$220,000 - $230,000                                                                                                        </option><option value="240000">$230,000 - $240,000                                                                                                        </option><option value="250000">$240,000 - $250,000                                                                                                        </option><option value="260000">$250,000 - $260,000                                                                                                        </option><option value="270000">$260,000 - $270,000                                                                                                        </option><option value="280000">$270,000 - $280,000                                                                                                        </option><option value="290000">$280,000 - $290,000                                                                                                        </option><option value="300000">$290,000 - $300,000                                                                                                        </option><option value="300000">$300,000+</option>
+                                        </select>
+                                    </aside></td>
+                            </tr>
+                            <tr>
+                                <td><input type="button" onClick="submitForm();" value="Get Started" class="redbtn showErr" /></td>
+                            </tr>
+                        </table>
+                       </form></div>
+		</div>                        <span style="font-size:10px; color:#FFFFFF;">We take your privacy seriously.  By clicking the button above, you agree to share your information with Student Loan Service and/or our partner(s) (including through automated means; e.g. autodialing, text and pre-recorded messaging) via telephone, mobile device (including SMS and MMS) and/or email, even if your telephone number is currently listed on any state, federal or corporate Do Not Call list.</span>
+                    </aside>
+
