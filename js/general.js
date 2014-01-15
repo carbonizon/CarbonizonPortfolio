@@ -45,7 +45,7 @@ function formSubmit() {
             if (message.length > 1) {
                 $('#message').removeClass('error')
                 var formData = {
-                    "key": "4ZhAl-7vZL-ZwmiMKozwBQ",
+                    "key": "1-mhUdqJ5OFL3LXYxqyeFA",
                     "message": {
                         "text": message,
                         "subject": "Portfolio Contact",
