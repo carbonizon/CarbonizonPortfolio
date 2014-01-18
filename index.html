@@ -7,12 +7,37 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/stylesheet.css" rel="stylesheet">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="js/bxslider.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jQueryRotateCompressed.js"></script>
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+    <link rel="stylesheet" href="source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <link rel="stylesheet" href="source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+    <link rel="stylesheet" href="source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
     <script src="js/bootstrap.js"></script>
     <script type="text/javascript" charset="iso-8859-1" src="js/general.js"></script>
-    <script src="js/bxslider.js"></script>
-    <link href="css/jquery.bxslider.css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
-
+    <script>
+    $(document).ready(function() {
+	$(".fancybox-thumb").fancybox({
+		prevEffect	: 'none',
+		nextEffect	: 'none',
+		helpers	: {
+			title	: {
+				type: 'outside'
+			},
+			thumbs	: {
+				width	: 50,
+				height	: 50
+			}
+		}
+	});
+  });
+  </script>
   </head>
   <body>
     <!--- Navigation Bar 
@@ -66,9 +91,10 @@
             <br>
             <span class="icon-html5 slider_icon ease"></span>
             <span class="icon-css3 slider_icon ease"></span>
+            <span class="icon-jquery slider_icon ease"></span>
             <br>
             <br>
-            <h3 class="slider_end ease">Powered by the latest revisions of HTML & CSS (HTML5 & CSS3).</h3>
+            <h3 class="slider_end ease">Powered by the latest revisions of HTML, CSS & jQuery.</h3>
           </li>
           <li class="slide">
             <h1 class="inline slide_lead_before slide_lead ease">Reliable. </h1>
@@ -92,7 +118,7 @@
       <div class="container">
         <span class="icon-bookmark bookmark_1"></span>
         <div class="title_box">
-          <span class="icon-github title_icon"></span>
+          <span class="icon-coffee title_icon"></span>
           <h1 class="title inline">  about </h1>
           <h4 class="sub_title inline">Get to know me better.</h4>
         </div>
@@ -100,10 +126,10 @@
         <div class="test">
           <div class="col-sm-6 text-lead-in">
             <p class="lead">Hi, my name is Chris. I'm enrolled at Central Connecticut State University.</p>
-            <p class="section_text">I specialize in User Interface & User Experience web design. Fabricating high converting, aesthetically pleasing websites. Transforming traffic into returning customers.</p>
+            <p class="section_text waypoint1">I specialize in User Interface & User Experience web design. Fabricating high converting, aesthetically pleasing websites. Transforming traffic into paying customers.</p>
           </div>
-          <div class="col-sm-6">
-            <img class="img_responsive scientist" src="images/scientist.png">
+          <div class="col-sm-6" style="text-align: center;">
+            <img class="img_responsive me" src="images/superchrismini.png">
           </div>
         </div>
       </div>
@@ -121,19 +147,69 @@
             <ul>
               <li style="list-style: none; padding-bottom:15px;"><span class="lead">Website Development</span><br><span class="section2_text">Developing websites for businesses and individuals looking for professional service.</span></li>
               <li style="list-style: none; padding-bottom:15px;"><span class="lead">Responsive Design</span><br><span class="section2_text">Designing websites to have a mind of their own. Changing size, color, and positioning according to browser size realtime.</span></li>
-              <li style="list-style: none; padding-bottom:15px;"><span class="lead">Free Consultation</span><br><span class="section2_text">Do you have an idea that you want to bounce off me? I can work with you to develop a plan for your business that will ultimately generate results.</span></li>
+              <li style="list-style: none; padding-bottom:15px;"><span class="lead waypoint2">Free Consultation</span><br><span class="section2_text">Do you have an idea that you want to bounce off me? I can work with you to develop a plan for your business that will ultimately generate results.</span></li>
             </ul>
           </div>
-          <div class="col-sm-6">
-            <img class="img_responsive" src="images/about_image.png">
+          <div class="col-sm-6" style="text-align: center;">
+            <img class="img_responsive mac" src="images/mac.png">
           </div>
       </div>
     </div>
-    <div class="fourth_section contact">
+    <div class="fourth_section about">
       <div class="container">
         <span class="icon-bookmark bookmark_3"></span>
         <div class="title_box">
-          <span class="icon-mail title_icon"></span>
+          <span class="icon-github title_icon"></span>
+          <h1 class="title inline">  portfolio </h1>
+          <h4 class="sub_title inline">Your site could be here.</h4>
+        </div>
+        <div class="divider"></div>
+        <div class="test">
+          <div class="col-sm-6 text-lead-in">
+            <div class="sites-container">
+              <div class="site-holder">
+                <p class="sitename">Student Debt Relief</p>
+                <a class="fancybox-thumb" rel="fancybox-thumb" href="images/studentdebtrelief.jpg"><img class="siteimage" src="images/studentdebtrelief.jpg"></a>
+                <p class="site-link"><a href="http://nftroop42.org/" target="_blank">nftroop42.org</a></p>
+              </div>
+              <div class="site-holder">
+                <p class="sitename">Student Debt Relief</p>
+                <a class="fancybox-thumb" rel="fancybox-thumb" href="images/studentdebtrelief.jpg"><img class="siteimage" src="images/studentdebtrelief.jpg"></a>
+                <p class="site-link"><a href="http://nftroop42.org/" target="_blank">nftroop42.org</a></p>
+              </div>
+              <div class="site-holder">
+                <p class="sitename">Student Debt Relief</p>
+                <a class="fancybox-thumb" rel="fancybox-thumb" href="images/studentdebtrelief.jpg"><img class="siteimage" src="images/studentdebtrelief.jpg"></a>
+                <p class="site-link"><a href="http://nftroop42.org/" target="_blank">nftroop42.org</a></p>
+              </div>
+              <div class="site-holder">
+                <p class="sitename">Student Debt Relief</p>
+                <a class="fancybox-thumb" rel="fancybox-thumb" href="images/studentdebtrelief.jpg"><img class="siteimage" src="images/studentdebtrelief.jpg"></a>
+                <p class="site-link"><a href="http://nftroop42.org/" target="_blank">nftroop42.org</a></p>
+              </div>
+              <div class="site-holder">
+                <p class="sitename">Student Debt Relief</p>
+                <a class="fancybox-thumb" rel="fancybox-thumb" href="images/studentdebtrelief.jpg"><img class="siteimage" src="images/studentdebtrelief.jpg"></a>
+                <p class="site-link"><a href="http://nftroop42.org/" target="_blank">nftroop42.org</a></p>
+              </div>
+              <div class="site-holder">
+                <p class="sitename">NF Troop 42</p>
+                <a class="fancybox-thumb" rel="fancybox-thumb" href="images/nftroop42.jpg"><img class="siteimage" src="images/nftroop42.jpg"></a>
+                <p class="site-link"><a href="http://nftroop42.org/beta" target="_blank">nftroop42.org</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6" style="text-align: center;">
+            <img class="img_responsive scientist" src="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fifth_section contact">
+      <div class="container">
+        <span class="icon-bookmark bookmark_4"></span>
+        <div class="title_box" style="margin-top: 80px;">
+          <span class="icon-envelope title_icon"></span>
           <h1 class="title inline"> contact </h1>
           <h4 class="sub_title inline">Let's talk business.</h4>
         </div>
@@ -157,7 +233,7 @@
               <div class="form-group">
                 <label for="inputMessage" class="col-sm-2 control-label whitetext">Memo</label>
                 <div class="col-sm-10">
-                  <textarea type="text" class="form-control" id="message" placeholder="Message"></textarea>
+                  <textarea type="text" class="form-control" id="message" placeholder="Memo"></textarea>
                 </div>
               </div>
               <div class="form-group">

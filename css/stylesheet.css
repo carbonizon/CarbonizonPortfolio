@@ -24,7 +24,7 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-screen:before {
+.icon-jquery:before {
 	content: "\e600";
 }
 .icon-mobile:before {
@@ -33,39 +33,54 @@
 .icon-tablet:before {
 	content: "\e602";
 }
-.icon-html5:before {
+.icon-screen:before {
 	content: "\e603";
 }
-.icon-css3:before {
+.icon-html5:before {
 	content: "\e604";
 }
-.icon-firefox:before {
+.icon-css3:before {
 	content: "\e605";
 }
 .icon-chrome:before {
 	content: "\e606";
 }
-.icon-IE:before {
+.icon-firefox:before {
 	content: "\e607";
 }
-.icon-safari:before {
+.icon-IE:before {
 	content: "\e608";
 }
-.icon-github:before {
+.icon-safari:before {
 	content: "\e609";
 }
-.icon-mail:before {
+.icon-github:before {
 	content: "\e60a";
 }
 .icon-stack:before {
 	content: "\e60b";
 }
-.icon-skype:before {
+.icon-envelope:before {
 	content: "\e60c";
 }
-.icon-facebook:before {
+.icon-skype:before {
 	content: "\e60d";
 }
+.icon-facebook:before {
+	content: "\e60e";
+}
+.icon-bookmark:before {
+	content: "\e60f";
+}
+.icon-menu:before {
+	content: "\e610";
+}
+.icon-coffee:before {
+	content: "\e611";
+}
+
+
+
 
 .centertopbot {
     margin-top: 10px;;
@@ -92,9 +107,9 @@ p, h1, h2, h3, h4, h5, h6, .lead {
 .error {
     background-color: red;
 }
-::-webkit-scrollbar { 
+/*::-webkit-scrollbar { 
     display: none; 
-}
+}*/
 .margin-bottom-25 {
     margin-bottom: 25px;
 }
@@ -139,6 +154,12 @@ h7 {
 .text-lead-in {
 	margin-top: 10px;
 }
+.bookmark_4 {
+font-size: 60px;
+color: #9348B2;
+margin-left: 30px;
+float: right;
+}
 @media (max-width: 500px) {
     .lead {
     font-size: 20px;
@@ -162,10 +183,11 @@ h7 {
     line-height: 32px;
 }
 .section2_text {
-    font-size: 14px;
+    font-size: 18px;
     color: white;
     font-weight: bold;
     line-height: 32px;
+				font-family: 'Roboto Condensed', sans-serif;
 }
 /*Navigation Bar*/
 .navbar-default {
@@ -188,6 +210,11 @@ h7 {
     color: #8EC952;
     background-color: white;
     }
+				.me {
+								position:relative;
+								top: -60px;
+				}
+
 }
 @media (max-width: 768px) {
     .navbar-default .navbar-nav > li > a {
@@ -195,7 +222,10 @@ h7 {
     }
 }
 /*First Section*/
-.scientist {
+.me {
+    max-height: 350px;
+}
+.mac {
     max-height: 350px;
 }
 .logo {
@@ -209,7 +239,7 @@ h7 {
 }
 .slide {
     text-align: center;
-    color: rgba(255,255,255,0.6);
+    color: rgba(255,255,255,0.3);
 }
 .centertopbot > ul {
 				padding-left:0px;
@@ -219,16 +249,20 @@ h7 {
     margin-left: 25px;
 }
 .slider_icon {
-    font-size: 200px;
+    font-size: 150px;
 }
 .slider_icon-smaller {
-    font-size: 200px;
+    font-size: 150px;
 }
 .slide_lead_before {
     font-weight: normal;
 }
 .slide_lead_after {
     font-weight: bolder;
+}
+.first_section {
+				background-color: rgba(31,31,31,0.8);
+				/*background-color:rgba(199, 0, 0, 0.8);*/
 }
 @media (max-width: 1000px) {
     .slider_icon-smaller {
@@ -264,41 +298,72 @@ h7 {
     font-size: 18px;
     }
 }
-.first_section {
-    background: #1f1f1f url(../simages/top_bg.png) repeat-x;
-}
 /*Second Section*/
 .second_section {
-    background-color: #8EC952;
+    background-color: #2980b9;
     padding-bottom: 100px;
 }
 .bookmark_1 {
     font-size: 60px;
-    color: #1E1E1E;
+    color: #4A4A4A;
     margin-left: 30px;
 }
 /*Third Section*/
 .third_section {
-    background-color: #528ec9;
+    background-color: #27ae60;
     padding-bottom: 100px;
 }
 .bookmark_2 {
     font-size: 60px;
-    color: #8EC952;
+    color: #2980B9;
     margin-left: 30px;
     float:right;
     
 }
-/*Fourth Section*/
 .fourth_section {
-    background: #1f1f1f url(../images/top_bg.png) repeat;
+    background: #9348B2;
     padding-bottom:100px;
 }
 .bookmark_3 {
     font-size: 60px;
-    color: #A5A5A5;
+    color: #27AE60;
     margin-left: 30px;
     
+}
+.sitename {
+				font-size:18px;
+				font-family: 'Roboto Condensed', sans-serif;
+				color:white;
+				font-weight:700;
+}
+.site-holder {
+				background-color: #4A4A4A;
+				padding: 7px;
+				max-width: 158.5px;
+				text-align: center;
+				border-radius: 7px;
+				margin:3px;
+				display: inline-block;
+				
+}
+.sites-container {
+				text-align: center;
+}
+.site-link {
+				margin-top:10px;
+				font-size:16px;
+				font-family: 'Open Sans Condensed', sans-serif;
+}
+.siteimage {
+				border-radius:3px;
+				width:139px;
+				height:100px;
+				border: solid 1px #FFFFFF;
+}
+/*Fourth Section*/
+.fifth_section {
+    background: #1f1f1f url(../images/top_bg.png) repeat;
+    padding-bottom:100px;
 }
 a#rotator2 span {
 display:inline-block;

@@ -1,5 +1,19 @@
-
 $(document).ready(function(){
+//WAYPOINTS
+$('.me').hide();
+$('.waypoint1').waypoint(function() {
+  $('.me').slideDown('slow')
+}, { offset: '100%' });
+
+
+$('.mac').hide();
+$('.waypoint2').waypoint(function() {
+  $('.mac').slideDown('slow')
+}, { offset: '100%' });
+
+
+
+
 //jQuery code which toggles mobile nav bar on click of a
 $(function() {
     $('.nav a').on('click', function(){ 

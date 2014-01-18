@@ -48,7 +48,7 @@
 
 .bx-wrapper .bx-loading {
 	min-height: 50px;
-	background: url(images/bx_loader.gif) center center no-repeat #fff;
+	background: url(../images/bx_loader.gif) center center no-repeat #fff;
 	height: 100%;
 	width: 100%;
 	position: absolute;
@@ -98,7 +98,7 @@
 
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active {
-	background: #8EC952;
+	background: #2980B9;
 }
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
@@ -138,7 +138,7 @@
 	width: 10px;
 	height: 11px;
 	outline: 0;
-	background: url(images/controls.png) -86px -11px no-repeat;
+	background: url(../images/controls.png) -86px -11px no-repeat;
 	margin: 0 3px;
 }
 
@@ -153,7 +153,7 @@
 	width: 9px;
 	height: 11px;
 	outline: 0;
-	background: url(images/controls.png) -86px -44px no-repeat;
+	background: url(../images/controls.png) -86px -44px no-repeat;
 	margin: 0 3px;
 }
 
