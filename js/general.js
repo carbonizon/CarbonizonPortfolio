@@ -1,18 +1,43 @@
 $(document).ready(function(){
 //WAYPOINTS
+$(".fancybox-thumb").fancybox({
+    prevEffect	: 'none',
+    nextEffect	: 'none',
+    helpers	: {
+        title	: {
+            type: 'outside'
+        },
+        thumbs	: {
+            width	: 50,
+            height	: 50
+        }
+    }
+});
+
 $('.me').hide();
 $('.waypoint1').waypoint(function() {
-  $('.me').slideDown('slow')
+  $('.me').fadeIn('slow')
 }, { offset: '100%' });
-
 
 $('.mac').hide();
 $('.waypoint2').waypoint(function() {
-  $('.mac').slideDown('slow')
+  $('.mac').fadeIn('slow')
 }, { offset: '100%' });
 
-
-
+$('.site1').hide();
+$('.site2').hide();
+$('.site3').hide();
+$('.site4').hide();
+$('.site5').hide();
+$('.site6').hide();
+$('.waypoint3').waypoint(function() {
+    $('.site1').fadeIn('slow')
+    $('.site2').delay(300).fadeIn('slow')
+    $('.site3').delay(600).fadeIn('slow')
+    $('.site4').delay(900).fadeIn('slow')
+    $('.site5').delay(1200).fadeIn('slow')
+    $('.site6').delay(1500).fadeIn('slow')
+}, { offset: '100%' });
 
 //jQuery code which toggles mobile nav bar on click of a
 $(function() {

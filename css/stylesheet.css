@@ -1,3 +1,28 @@
+body {
+				height:100%;
+}
+html {
+				height:100%;
+}
+.footer {
+				font-family: 'Open Sans Condensed', sans-serif;
+				font-size:16px;
+				color: rgba(255,255,255,0.8);
+				clear:both;
+				text-align: center;
+}
+.icon-coffee {
+				display:inline-block;
+}
+.icon-stack {
+				display:inline-block;
+}
+.icon-envelope {
+				display:inline-block;
+}
+.icon-github {
+				display:inline-block;
+}
 /*General*/
 @font-face {
 	font-family: 'icomoon';
@@ -175,6 +200,12 @@ float: right;
     .sub_title {
         font-size: 16px;
     }
+				
+}
+@media (max-width: 520px) {
+				.sites-container {
+				text-align: center;
+}
 }
 .section_text {
     font-size: 18px;
@@ -212,7 +243,7 @@ float: right;
     }
 				.me {
 								position:relative;
-								top: -60px;
+								top: -40px;
 				}
 
 }
@@ -301,7 +332,7 @@ float: right;
 /*Second Section*/
 .second_section {
     background-color: #2980b9;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 .bookmark_1 {
     font-size: 60px;
@@ -339,26 +370,32 @@ float: right;
 .site-holder {
 				background-color: #4A4A4A;
 				padding: 7px;
-				max-width: 158.5px;
+				max-width: 230px;
 				text-align: center;
 				border-radius: 7px;
-				margin:3px;
+				margin: 2px;
+				margin-bottom: 5px;
 				display: inline-block;
 				
-}
-.sites-container {
-				text-align: center;
 }
 .site-link {
 				margin-top:10px;
 				font-size:16px;
 				font-family: 'Open Sans Condensed', sans-serif;
+				font-weight: 700;
+}
+.site-link a:hover {
+				text-decoration: none;
+				color:white;
+}
+.siteimage:hover {
+				opacity: .5;
 }
 .siteimage {
 				border-radius:3px;
-				width:139px;
-				height:100px;
-				border: solid 1px #FFFFFF;
+				width:200px;
+				height:125px;
+				border: solid 2px rgba(255,255,255,0.5);
 }
 /*Fourth Section*/
 .fifth_section {

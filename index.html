@@ -5,12 +5,12 @@
     <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/stylesheet.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script src="js/bxslider.js"></script>
     <script src="js/waypoints.min.js"></script>
     <script src="js/jQueryRotateCompressed.js"></script>
-    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+    <link href="css/jquery.bxslider.css" rel="stylesheet"/>
     <link rel="stylesheet" href="source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
     <script type="text/javascript" src="source/jquery.fancybox.pack.js?v=2.1.5"></script>
     <link rel="stylesheet" href="source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
@@ -20,49 +20,12 @@
     <script type="text/javascript" src="source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
     <script src="js/bootstrap.js"></script>
     <script type="text/javascript" charset="iso-8859-1" src="js/general.js"></script>
+    <script type="text/javascript" src="js/jQueryRotateCompressed.js"></script>
+    <script type="text/javascript" src="tweetie.min.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
-    <script>
-    $(document).ready(function() {
-	$(".fancybox-thumb").fancybox({
-		prevEffect	: 'none',
-		nextEffect	: 'none',
-		helpers	: {
-			title	: {
-				type: 'outside'
-			},
-			thumbs	: {
-				width	: 50,
-				height	: 50
-			}
-		}
-	});
-  });
-  </script>
   </head>
   <body>
-    <!--- Navigation Bar 
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" id="funk" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li id="home"><a href="#">Home</a></li>
-            <li id="about"><a href="#">About</a></li>
-            <li id="services"><a href="#">Services</a></li>
-            <li id="contact"><a href="#">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    End Navigation Bar--->
-    <div class="first_section">
+    <div class="first_section ease1">
       <div class="container">
         <div class="logo">
           <img src="images/logo-carbon.png">
@@ -114,22 +77,22 @@
         </ul>
       </div>
     </div>
-    <div class="second_section about">
+    <div class="second_section about ease1">
       <div class="container">
         <span class="icon-bookmark bookmark_1"></span>
         <div class="title_box">
           <span class="icon-coffee title_icon"></span>
           <h1 class="title inline">  about </h1>
-          <h4 class="sub_title inline">Get to know me better.</h4>
+          <h4 class="sub_title inline tweet">Get to know me better.</h4>
         </div>
         <div class="divider"></div>
         <div class="test">
-          <div class="col-sm-6 text-lead-in">
-            <p class="lead">Hi, my name is Chris. I'm enrolled at Central Connecticut State University.</p>
-            <p class="section_text waypoint1">I specialize in User Interface & User Experience web design. Fabricating high converting, aesthetically pleasing websites. Transforming traffic into paying customers.</p>
-          </div>
           <div class="col-sm-6" style="text-align: center;">
             <img class="img_responsive me" src="images/superchrismini.png">
+          </div>
+          <div class="col-sm-6 text-lead-in">
+            <p class="lead waypoint1">Hi, my name is Chris. I'm enrolled at Central Connecticut State University.</p>
+            <p class="section_text">I specialize in User Interface & User Experience web design. Fabricating high converting, aesthetically pleasing websites. Transforming traffic into paying customers.</p>
           </div>
         </div>
       </div>
@@ -155,57 +118,39 @@
           </div>
       </div>
     </div>
-    <div class="fourth_section about">
+    <div class="fourth_section about ease1">
       <div class="container">
         <span class="icon-bookmark bookmark_3"></span>
         <div class="title_box">
           <span class="icon-github title_icon"></span>
           <h1 class="title inline">  portfolio </h1>
-          <h4 class="sub_title inline">Your site could be here.</h4>
+          <h4 class="sub_title inline waypoint3">Your site could be here.</h4>
         </div>
         <div class="divider"></div>
         <div class="test">
-          <div class="col-sm-6 text-lead-in">
+          <div class="col-sm-12 text-lead-in">
             <div class="sites-container">
-              <div class="site-holder">
+              <div class="site-holder site1">
                 <p class="sitename">Student Debt Relief</p>
                 <a class="fancybox-thumb" rel="fancybox-thumb" href="images/studentdebtrelief.jpg"><img class="siteimage" src="images/studentdebtrelief.jpg"></a>
                 <p class="site-link"><a href="http://nftroop42.org/" target="_blank">nftroop42.org</a></p>
               </div>
-              <div class="site-holder">
-                <p class="sitename">Student Debt Relief</p>
-                <a class="fancybox-thumb" rel="fancybox-thumb" href="images/studentdebtrelief.jpg"><img class="siteimage" src="images/studentdebtrelief.jpg"></a>
+              <div class="site-holder site2">
+                <p class="sitename">Instalander</p>
+                <a class="fancybox-thumb" rel="fancybox-thumb" href="images/instalander.jpg"><img class="siteimage" src="images/instalander.jpg"></a>
                 <p class="site-link"><a href="http://nftroop42.org/" target="_blank">nftroop42.org</a></p>
               </div>
-              <div class="site-holder">
-                <p class="sitename">Student Debt Relief</p>
-                <a class="fancybox-thumb" rel="fancybox-thumb" href="images/studentdebtrelief.jpg"><img class="siteimage" src="images/studentdebtrelief.jpg"></a>
-                <p class="site-link"><a href="http://nftroop42.org/" target="_blank">nftroop42.org</a></p>
-              </div>
-              <div class="site-holder">
-                <p class="sitename">Student Debt Relief</p>
-                <a class="fancybox-thumb" rel="fancybox-thumb" href="images/studentdebtrelief.jpg"><img class="siteimage" src="images/studentdebtrelief.jpg"></a>
-                <p class="site-link"><a href="http://nftroop42.org/" target="_blank">nftroop42.org</a></p>
-              </div>
-              <div class="site-holder">
-                <p class="sitename">Student Debt Relief</p>
-                <a class="fancybox-thumb" rel="fancybox-thumb" href="images/studentdebtrelief.jpg"><img class="siteimage" src="images/studentdebtrelief.jpg"></a>
-                <p class="site-link"><a href="http://nftroop42.org/" target="_blank">nftroop42.org</a></p>
-              </div>
-              <div class="site-holder">
+              <div class="site-holder site3">
                 <p class="sitename">NF Troop 42</p>
                 <a class="fancybox-thumb" rel="fancybox-thumb" href="images/nftroop42.jpg"><img class="siteimage" src="images/nftroop42.jpg"></a>
                 <p class="site-link"><a href="http://nftroop42.org/beta" target="_blank">nftroop42.org</a></p>
               </div>
             </div>
           </div>
-          <div class="col-sm-6" style="text-align: center;">
-            <img class="img_responsive scientist" src="">
-          </div>
         </div>
       </div>
     </div>
-    <div class="fifth_section contact">
+    <div class="fifth_section contact ease1">
       <div class="container">
         <span class="icon-bookmark bookmark_4"></span>
         <div class="title_box" style="margin-top: 80px;">
@@ -219,7 +164,7 @@
             <div class="successpara"></div>
             <form class="form-horizontal" role="form">
               <div class="form-group">
-                <label for="inputname" class="col-sm-2 control-label whitetext">Name</label>
+                <label for="inputname" class="col-sm-2 control-label whitetext waypoint4">Name</label>
                 <div class="col-sm-10">
                   <input type="text" class="form-control " id="name" placeholder="Name">
                 </div>
@@ -244,12 +189,13 @@
             </form>
           </div>
           <div class="col-sm-6 center">
-            <h3 class="lead whitetext" style="margin-top: 0px;">Get Social</h3>
+            <h3 class="lead whitetext foot" style="margin-top: 0px;">Get Social</h3>
             <a id="rotator2" class="nodec" href="https://www.facebook.com/ChrisKanze" target="_blank"><span class="icon-facebook fb contact-icons ease"></span></a>
             <a id="rotator2" class="nodec" href="skype:live:carbonizon"><span class="icon-skype social skype contact-icons ease"></span></a>
           </div>
           <div class="under"></div>
       </div>
+      <p class="footer">Copyright 2014 - Carbonizon</p>
     </div>
   </body>
 </html>
